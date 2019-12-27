@@ -1,0 +1,9 @@
+[[redirects]]
+  from = "/resume"
+  to = "https://docs.google.com/document/d/1NQ6UeOBVufTVdWNZ9oxrt-neUFyFCoLoXLdFf4kRtr4/edit?usp=sharing"
+  status = 302
+  
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
