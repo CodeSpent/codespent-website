@@ -6,6 +6,9 @@ import VueResource from 'vue-resource';
 // import tailwind css
 import '@/assets/css/tailwind.css';
 
+// import baloon css
+import 'balloon-css';
+
 // import prism editor
 import 'prismjs/components/prism-json.js';
 import VuePrismEditor from 'vue-prism-editor';

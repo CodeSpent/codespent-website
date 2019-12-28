@@ -1,14 +1,34 @@
 <template>
   <ul class="circle-container m-5 mt-10 mb-10">
     <li
-      v-for="brand in brands"
+      v-for="(brand, index) in brands"
       :key="brand.name"
+      @mouseover="showBrandDetails(index)"
+      @mouseleave="activeBrand = false"
     >
       <img
         :src="brand.src"
-        alt="..."
+        :alt="brand.name"
         width="80px"
       >
+    </li>
+
+    <li v-if="activeBrand">
+      <div class="brand-details flex flex-col items-center">
+        <div class="flex flex-row items-center">
+          <img
+            :src="activeBrand.src"
+            :alt="activeBrand.name"
+            class="mr-2"
+            style="height: 50px;"
+          >
+          <div class="flex flex-col justify-center text-center">
+            <h1 class="text-white font-black text-2xl mt-2">
+              {{ activeBrand.name }}
+            </h1>
+          </div>
+        </div>
+      </div>
     </li>
   </ul>
 </template>
@@ -17,9 +37,10 @@
 export default {
   data() {
     return {
+      activeBrand: false,
       brands: [
         {
-          name: "Vue",
+          name: "VueJS",
           src: require("@/assets/img/brands/logo.png")
         },
         {
@@ -27,7 +48,7 @@ export default {
           src: require("@/assets/img/brands/django.svg")
         },
         {
-          name: "React",
+          name: "ReactJS",
           src: require("@/assets/img/brands/react.png")
         },
         {
@@ -39,7 +60,7 @@ export default {
           src: require("@/assets/img/brands/gridsome.svg")
         },
         {
-          name: "Angular",
+          name: "AngularJS",
           src: require("@/assets/img/brands/angular.svg")
         },
         {
@@ -60,6 +81,11 @@ export default {
         }
       ]
     };
+  },
+  methods: {
+    showBrandDetails(index) {
+      this.activeBrand = this.brands[index];
+    }
   }
 };
 </script>
@@ -111,5 +137,9 @@ export default {
     max-width: 100%;
     transition: 0.15s;
   }
+}
+
+.brand-details {
+  margin-left: -40px;
 }
 </style>
