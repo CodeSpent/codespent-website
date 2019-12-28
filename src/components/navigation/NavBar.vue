@@ -73,6 +73,7 @@ export default {
       showNav: true,
       lastScrollPos: 0,
       currentScrollPos: 0,
+      thresholdBeforeNavHide: 300,
       headshot: require("@/assets/img/headshot.jpeg"),
       internalLinks: [
         {
@@ -106,7 +107,10 @@ export default {
         return;
       }
 
-      if (this.lastScrollPos < window.scrollY) {
+      if (
+        this.lastScrollPos < window.scrollY &&
+        window.scrollY > this.thresholdBeforeNavHide
+      ) {
         this.showNav = false;
       }
 
