@@ -5,13 +5,21 @@
         <h3 class="font-bold text-white text-md">
           Patrick Hanford
         </h3>
-        <h4 class="text-sm text-gray-600">
+        <a
+          href="tel:14125852541"
+          target="_blank"
+          class="text-sm text-gray-600"
+        >
           (412) 585-2541
-        </h4>
+        </a>
         <div class="flex flex-row">
-          <h4 class="text-sm text-gray-600">
+          <a
+            href="mailto: pat@phanford.me"
+            target="_blank"
+            class="text-sm text-gray-600"
+          >
             pat@phanford.me
-          </h4>
+          </a>
         </div>
         <div class="flex flex-row">
           <ul class="container flex flex-row">

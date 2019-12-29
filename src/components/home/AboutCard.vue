@@ -9,9 +9,13 @@
         <h1 class="text-white font-black">
           Patrick Hanford
         </h1>
-        <h3 class="text-gray-600">
+        <a
+          href="mailto:pat@phanford.me"
+          target="_blank"
+          class="text-gray-600"
+        >
           pat@phanford.me
-        </h3>
+        </a>
 
         <ul class="container flex flex-row">
           <li
