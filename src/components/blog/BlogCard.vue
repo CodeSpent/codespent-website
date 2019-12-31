@@ -2,11 +2,13 @@
   <router-link
     :to="{ path: 'blog/post/' + id }"
     class="ml-0 rounded overflow-hidden shadow-lg bg-moss flex flex-col cursor-pointer"
-    style="min-width: 250px; max-width: 300px;"
+    style="min-width: 300px; width: 300px;"
   >
     <img
       class="w-xs"
-      :src="imageUrl"
+      style="height: 150px;"
+      :src="
+        imageUrl"
     >
     <div class="px-6 py-4">
       <div class="font-bold text-lg mb-2 text-white">
@@ -21,7 +23,7 @@
         <span
           v-for="tag in tags"
           :key="tag"
-          class="m-auto flex-end inline-block bg-gray-200 rounded-full px-2 py-1 text-xs font-semibold text-gray-700 m-2"
+          class="flex-end inline-block bg-gray-200 rounded-full px-2 py-1 text-xs font-semibold text-gray-700 m-2"
         >
           #{{ tag }}
         </span>
