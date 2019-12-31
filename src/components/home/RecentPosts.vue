@@ -9,7 +9,7 @@
         class="font-light text-gray-600 hover:text-white self-start"
       >View All</a>
     </div>
-    <div class="flex flex-row overflow-scroll m-2">
+    <div class="flex flex-row overflow-x-scroll m-2">
       <h3
         v-if="articles.length < 1"
         class="text-gray-600"
@@ -20,6 +20,7 @@
         v-for="article in articles"
         v-else
         :id="article.id"
+        :link="{ name: 'blog-post', params: { articleId: article.id }}"
         :key="article.id"
         class="mx-5"
         :title="article.title"
@@ -28,6 +29,10 @@
         :tags="article.tag_list"
         :reaction-count="article.positive_reactions_count"
         :comment-count="article.comments_count"
+      />
+      <BlogCard 
+        :end="true"
+        :link="{ name: 'blog-home' }"
       />
     </div>
   </div>
