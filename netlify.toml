@@ -7,3 +7,8 @@
   from = "/*"
   to = "/index.html"
   status = 200
+
+[[redirects]]
+  from = "/source"
+  to = "https://github.com/CodeSpent/codespent-website"
+  status = 302
