@@ -13,6 +13,7 @@
       <BlogCard
         v-for="article in articles"
         :id="article.id"
+        :link="{ name: 'blog-post', params: { articleId: article.id }}"
         :key="article.id"
         class="my-5 md:mx-5"
         :title="article.title"
