@@ -1,14 +1,13 @@
 <template>
   <router-link
-    :to="{ path: 'blog/post/' + id }"
+    :to="{ name: 'blog-post', params: { articleId: id } }"
     class="ml-0 rounded overflow-hidden shadow-lg bg-moss flex flex-col cursor-pointer"
     style="min-width: 300px; width: 300px;"
   >
     <img
       class="w-xs"
       style="height: 150px;"
-      :src="
-        imageUrl"
+      :src="imageUrl"
     >
     <div class="px-6 py-4">
       <div class="font-bold text-lg mb-2 text-white">

@@ -9,11 +9,10 @@
           :src="headshot"
           class="rounded-full w-10 h-10 mx-2"
         >
-        <a
-          href="/"
-        ><span
-          class="font-black text-3xl text-white tracking-tight"
-        >Patrick Hanford</span></a>
+        <a href="/">
+          <span class="font-black text-3xl text-white tracking-tight">
+            Patrick Hanford</span>
+        </a>
       </div>
 
       <div class="lg:flex lg:items-center lg:w-auto lg:ml-auto hidden">
@@ -82,7 +81,7 @@ export default {
         },
         {
           label: "Blog",
-          route: "blog"
+          route: { name: "blog-home" }
         }
       ],
       externalLinks: [
