@@ -9,6 +9,9 @@ import '@/assets/css/tailwind.css';
 // import baloon css
 import 'balloon-css';
 
+// import wc-markdown
+import '@vanillawc/wc-markdown';
+
 // import prism editor
 import VuePrismEditor from 'vue-prism-editor';
 import 'vue-prism-editor/dist/VuePrismEditor.css';
