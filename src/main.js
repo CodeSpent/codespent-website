@@ -13,6 +13,7 @@ import 'balloon-css';
 import VuePrismEditor from 'vue-prism-editor';
 import 'vue-prism-editor/dist/VuePrismEditor.css';
 import 'prismjs/components/prism-json.js';
+import 'prismjs/components/prism-python.js';
 
 // import font-awesome icons
 import { library } from '@fortawesome/fontawesome-svg-core';
