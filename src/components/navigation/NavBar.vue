@@ -6,7 +6,7 @@
     <div class="container flex p-4 items-center m-auto justify-center">
       <div class="mr-6 flex flex-row">
         <img
-          :src="headshot"
+          src="https://github.com/codespent.png"
           class="rounded-full w-10 h-10 mx-2"
         >
         <a href="/">
@@ -73,7 +73,6 @@ export default {
       lastScrollPos: 0,
       currentScrollPos: 0,
       thresholdBeforeNavHide: 300,
-      headshot: require("@/assets/img/headshot.jpeg"),
       internalLinks: [
         {
           label: "Home",

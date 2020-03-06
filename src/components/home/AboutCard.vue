@@ -2,7 +2,7 @@
   <div class="container">
     <div class="container flex items-center">
       <img
-        :src="headshot"
+        src="https://github.com/codespent.png"
         class="rounded-full w-20 h-20 m-3 border-shell border-2"
       >
       <div class="container">
@@ -45,7 +45,6 @@ export default {
   name: "AboutCard",
   data() {
     return {
-      headshot: require("@/assets/img/headshot.jpeg"),
       socials: [
         {
           name: "Twitter",
