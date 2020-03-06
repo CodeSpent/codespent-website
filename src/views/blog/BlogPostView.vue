@@ -51,10 +51,10 @@
       <font-awesome-icon icon="book-open" />&nbsp;Read on
       Dev.to
     </a>
-    <div
+    <wc-markdown
       id="article-content"
       class="container article text-left"
-      v-html="article.body_html"
+      highlight
     />
   </div>
 </template>
@@ -78,6 +78,8 @@ export default {
         switch (response.status) {
           case 200: {
             this.article = response.data;
+            const mdElement = document.getElementById('article-content');
+            mdElement.value = this.article.body_markdown;
             break;
           }
           default: {

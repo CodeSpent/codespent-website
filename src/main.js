@@ -9,10 +9,14 @@ import '@/assets/css/tailwind.css';
 // import baloon css
 import 'balloon-css';
 
+// import wc-markdown
+import '@vanillawc/wc-markdown';
+
 // import prism editor
-import 'prismjs/components/prism-json.js';
 import VuePrismEditor from 'vue-prism-editor';
 import 'vue-prism-editor/dist/VuePrismEditor.css';
+import 'prismjs/components/prism-json.js';
+import 'prismjs/components/prism-python.js';
 
 // import font-awesome icons
 import { library } from '@fortawesome/fontawesome-svg-core';
