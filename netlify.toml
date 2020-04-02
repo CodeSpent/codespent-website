@@ -12,3 +12,8 @@
   from = "/source"
   to = "https://github.com/CodeSpent/codespent-website"
   status = 302
+  
+[[redirects]]
+  from = "/autumn"
+  to = "https://sleepy-keller-7329f9.netlify.com/"
+  status = 302
