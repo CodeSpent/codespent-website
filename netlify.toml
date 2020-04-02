@@ -2,11 +2,6 @@
   from = "/resume"
   to = "https://docs.google.com/document/d/1NQ6UeOBVufTVdWNZ9oxrt-neUFyFCoLoXLdFf4kRtr4/edit?usp=sharing"
   status = 302
-  
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
 
 [[redirects]]
   from = "/source"
@@ -17,3 +12,8 @@
   from = "/autumn"
   to = "https://sleepy-keller-7329f9.netlify.com/"
   status = 302
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
