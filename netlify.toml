@@ -12,7 +12,10 @@
   from = "/autumn"
   to = "https://sleepy-keller-7329f9.netlify.com/"
   status = 302
-
+[[redirects]]
+  from = "/discord"
+  to = "https://discord.gg/3ZQUcnY"
+  status = 302
 [[redirects]]
   from = "/*"
   to = "/index.html"
