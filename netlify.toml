@@ -19,6 +19,11 @@
   status = 302
 
 [[redirects]]
+  from = "/steam"
+  to = "https://steamcommunity.com/id/codespent"
+  status = 302
+  
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
