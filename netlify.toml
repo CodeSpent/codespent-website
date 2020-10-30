@@ -19,6 +19,11 @@
   status = 302
   
 [[redirects]]
+  from = "/unfortunateprogrammers"
+  to = "https://forms.gle/gPBFAz2xrNLJfsPt9"
+  status = 302
+  
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
